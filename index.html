@@ -4,124 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第二週 - 個人網站</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="week2.css">
+    <title>陳怡彣作品集-Claire's Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./scss/all.css">
+    <!-- ico -->
+    <link rel="icon" href="./images/claireWebIco.gif" type="image/x-icon" />
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <div class="banner">
-        <div class="bannerInner">
-            <h3>Here’s</h3>
-            <h1>Claire 陳怡彣</h1>
-            <p>Founder of “XXXD Official’’<br> & Graphic Designer</p>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week2/behance.svg"
-                            alt=""></a></li>
-                <li><a href="#">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week2/facebook.svg"
-                            alt=""></a></li>
-                <li>
-                    <a href="#">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week2/instagram.svg"
-                            alt=""></a></li>
-                <li><a href="#">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/week2/youtube.svg"
-                            alt=""></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- endBanner -->
-    <div class="about">
-        <h1>About</h1>
-        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/photo.png?raw=true" alt="">
-        <ul class="info">
-            <li>Joanne Chen</li>
-            <li>1997/10/10</li>
-            <li>National Hex School Normal University <br>Department of Visual Design</li>
-        </ul>
-        <hr>
-        <ul class="workExp">
-            <li><span>Founder of ‘’XXXD Official’’</span></li>
-            <li><span>Graphic Designer</span></li>
-            <li><span>Graphic Intern of Hex School</span></li>
-        </ul>
-    </div>
 
-    <!-- endAbout -->
-    <div class="brand">
-        <h1>My Brand ‘’XXXD’’</h1>
-        <h3>Just Keep XXXD Everyday</h3>
-        <p>2020 年創立的個人服飾品牌<br> 引領叛逆少年開啟與社會對話的窗口<br> 主打概念潮流T-Shirt</p>
-        <div class="brandPic">
-            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/brand_img1.png?raw=true"
-                alt="">
-            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/brand_img2.png?raw=true"
-                alt="">
-            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/brand_img3.png?raw=true"
-                alt="">
-        </div>
-    </div>
-    <!-- endBrand -->
-    <div class="work">
-        <h1>Other Works</h1>
-        <p>2016-2020 年累積的作品<br> 海報/廣告/攝影/LOGO/3D</p>
-        <ul>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img1.png?raw=true"
-                    alt="">
-                <h5>海報設計/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img2.png?raw=true"
-                    alt="">
-                <h5>海報設計/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img3.png?raw=true"
-                    alt="">
-                <h5>海報設計/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img4.png?raw=true"
-                    alt="">
-                <h5>概念攝影/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img5.png?raw=true"
-                    alt="">
-                <h5>概念攝影/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img6.png?raw=true"
-                    alt="">
-                <h5>sasa 酒標設計/2019</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img7.png?raw=true"
-                    alt="">
-                <h5>攝影創作/2018</h5>
-            </li>
-            <li>
-                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/work_img8.png?raw=true"
-                    alt="">
-                <h5>官網設計/2020</h5>
-            </li>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">Claire's Portfolio</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="material-icons">
+                    menu
+                </span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="portfolio.html">Portfolio</a></li>
+                </ul>
 
-        </ul>
-    </div>
-    <!-- endWork -->
-    <footer>
-        <h1>Contact</h1>
-        <ul>
-            <li>
-                <a href="#">Mail：xxxd@hexschool.com</a></li>
-            <li>Phone Number：0910123456</li>
-        </ul>
-    </footer>
-    <!-- endfooter -->
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase text-white">陳怡彣 Claire</h1>
+                <h3 class="text-white-50 mx-auto mt-2 mb-5">網頁設計 / UI/UX設計 / 前端設計</h3>
+                <a class="btn btn-primary js-scroll-trigger text-white" href="#about">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">關於我<span>About</span></h2>
+                    <ul class="text-white-50 list-unstyled">
+                        <li>陳怡彣 <span>Claire Chen</span></li>
+                        <li>1985/12/12</li>
+                        <li>國立台中科技大學 <span>多媒體設計系畢業</span>
+                        </li>
+                    </ul>
+                    <!--ori <p class="text-white-50">
+                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
+                        simply download the template on
+                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page</a>
+                        . The theme is open source, and you can use it for any purpose, personal or commercial.
+                    </p> -->
+                </div>
+            </div>
+            <img class="img-fluid" src="./images/ipad.png" alt="" />
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container">
+            <!--works Featured Project Row -->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="./images/workHeader.jpg"
+                        alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-lg-left">
+                        <h4>工作經驗<span>Work</span></h4>
+                        <ul class="list-unstyled text-black-50">
+                            <li>詮力科技股份有限公司-網頁視覺設計師</li>
+                            <li>聯成電腦有限公司(聯成電腦)-多媒體講師</li>
+                            <li>廣瞻互動媒體設計-專案經理/多媒體設計師</li>
+                            <li>台中市數位知識經濟協會-網頁設計師</li>
+                            <li>台中精機股份有限公司-約聘多媒體設計師</li>
+                        </ul>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- project -->
+        <div class="container-fluid no-gutters mb-md-15 mb-10">
+            <!-- Project One Row -->
+            <section class="row no-gutters flex-column-reverse flex-md-row">
+                <div class="col-12 mb-8 col-md-6 d-flex align-items-md-center justify-content-md-center">
+                    <div class="text px-5">
+                        <h2 class="h2 font-weight-bold mb-md-2 my-2">UI/UX介面設計
+                        </h2>
+                        <p class="h5 font-weight-lighter letter-spacing-md mb-4 mb-md-2">
+                            使用軟體：Figma、Fireworks、Photoshop
+                        </p>
+                        <a href="portfolio_a.html" class="font-weight-medium">Find out more</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6"><img class="img-fluid" src="./images/work01.png" alt=""></div>
+            </section>
+            <!-- Project Two Row -->
+            <section class="row no-gutters">
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid mb-2 mb-md-0" src="./images/work02.png" alt="">
+                </div>
+                <div class="col-12 mb-8 col-md-6 d-flex align-items-md-center justify-content-md-center">
+                    <div class="text px-5">
+                        <h2 class="h2 font-weight-bold mb-md-2 my-2">
+                            網站設計</h2>
+                        <!-- <h5 class="mb-1">Newly developed sensor, evolved image processor</h5> -->
+                        <p class="h5 font-weight-lighter letter-spacing-md mb-4 mb-md-2">
+                            使用軟體：VS Code、Bootstrap 4、HTML5+CSS3、RWD、Git</p>
+                        <a href="portfolio_a.html" class="font-weight-medium">Find out more</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Project Three Row -->
+            <section class="row no-gutters flex-column-reverse flex-md-row">
+                <div class="col-12 mb-8 col-md-6 d-flex align-items-md-center justify-content-md-center">
+                    <div class="text px-5">
+                        <h2 class="h2 font-weight-bold mb-md-2 my-2">網站規劃</h2>
+                        <p>使用軟體：Ｘ-mind、紙筆手繪、Fireworks</p>
+                        <a href="portfolio_a.html" class="font-weight-medium">Find out more</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 "><img src="./images/work03.png" alt=""></div>
+            </section>
+            <!-- Project Four Row -->
+            <section class="row no-gutters">
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid mb-2 mb-md-0" src="./images/work04.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-md-center justify-content-md-center">
+                    <div class="text px-5 col-md-8">
+                        <h2 class="h2 font-weight-bold mb-md-2 my-2">其他設計</h2>
+                        <div class="mb-2 mb-md-3">
+                            平面設計作品、攝影等其他設計。
+                            <a href="portfolio_a.html"
+                                class="btnH5 btn btn-outline-dark border-radius-half border-width-md d-block">Watch
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- footerNav -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-3">
+            <a class="navbar-brand" href="index.html">Claire's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio_a.html">Portfolio</a>
+                    </li>
+                    <!-- <hr class="d-sm-block d-md-block d-lg-none d-xl-none text-white"> -->
+                    <!-- <ul>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">claire1212@gmail.com</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">0937-362956</a>
+            </li>
+        </ul> -->
+                </ul>
+            </div>
+        </nav>
+    <!-- end footerNav -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>

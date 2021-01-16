@@ -1,6 +1,18 @@
-
+//font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 @import"variables.scss";//custom
 @import "./bootstrap/bootstrap.scss";//引入bs
+@import"site.scss";//custom all site
+@import"utilities.scss";//custom utilities
 @import"components.scss";//custom
+@import"nav.scss";//custom nav
+//@import"index.scss";//custom index page
+@import"index.scss";//custom index page
+//@import"portfolio.scss";//custom index page
+@import"portfolio_a.scss";//custom index page
+
+
+
+
 
