@@ -4,6 +4,7 @@ ul.timeline {
     list-style-type: none;
     position: relative;
 }
+
 ul.timeline:before {
     content: ' ';
     background: #d4d9df;
@@ -14,11 +15,13 @@ ul.timeline:before {
     height: 100%;
     z-index: 400;
 }
-ul.timeline > li {
+
+ul.timeline>li {
     margin: 20px 0;
     padding-left: 20px;
 }
-ul.timeline > li:before {
+
+ul.timeline>li:before {
     content: ' ';
     background: white;
     display: inline-block;
@@ -31,3 +34,121 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
+
+// resume Title
+.title:before {
+    /*偽元素  \00a0  */
+    content: "\00a0";
+    border-left: 6px solid $primary;
+    padding-left: 5px;
+}
+
+.title span {
+    // text-indent: 12px;
+    padding-left: 12px;
+    font-size: $font-size-lg;
+}
+
+.subtitle:before {
+    content: "\00a0";
+    padding-left: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: $secondary;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.subtitle span {
+    padding-left: 8px;
+    font-size: $h6-font-size;
+}
+
+//index h1 animation
+#container {
+
+    font-size: 36px;
+    font-weight: bold;
+
+    width: 100%;
+    bottom: 45%;
+    display: block;
+
+    // padding-top:200px;  
+    // position:fixed;
+    // color:#999;
+    // text-transform: uppercase;
+}
+
+#flip {
+    height: 50px;
+    overflow: hidden;
+}
+
+#flip>div>div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div div {
+    background: #42c58a;
+}
+
+#flip div:first-child div {
+    background: #4ec7f3;
+}
+
+#flip div:last-child div {
+    background: #DC143C;
+}
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+p {
+    // position: fixed;
+    width: 100%;
+    bottom: 30px;
+    font-size: 12px;
+    color: #999;
+    margin-top: 200px;
+}

@@ -3,6 +3,50 @@
     background: #000;
 }
 
+.colorful {
+    // width: 100%;
+    // max-width: 800px;
+    // min-width: 300px;
+    // margin: 0 auto;
+    font-weight: bold;
+   // font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.3;
+    color: rgba(0,0,0,0);    
+    background: linear-gradient(85deg, 
+      rgba(242, 90, 176,1) 0%, 
+      rgba(91,190,248,1) 50%, 
+      rgba(139, 40, 255,1) 100%);
+      
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    animation: colorChange  6s;
+    animation-iteration-count: infinite;
+  }
+  
+//   .odakyu h2 {
+//     text-align: left;
+//     font-size: 150px;
+//     margin: 0;
+//     padding: 50px 0;
+//   }
+  
+//   .odakyu p {
+//     padding: 0 0 100px;
+//     font-size: 70px;
+//   }
+  
+  @keyframes colorChange {
+    from {
+          background-position: 0% 0%;
+      }
+      50% {
+          background-position: 100% 100%;
+      }
+      to {
+          background-position: 0% 0%;
+      }
+  }
+
 //fz
 .font-sm{
     font-size: 20px;
