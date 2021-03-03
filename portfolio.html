@@ -3,87 +3,371 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>陳怡彣作品集-Claire's Portfolio</title>
     <!-- css -->
     <link rel="stylesheet" href="./scss/all.css">
     <!-- ico -->
-    <link rel="icon" href="./images/claireWebIco.gif" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <!-- Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <!--  -->
     <div class="container">
         <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">陳怡彣作品集-Claire's Portfolio</h1>
-        </div>
-
-        <div class="text-center">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">UI/UX介面設計</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">網頁設計</button>
-            <button class="btn btn-default filter-button" data-filter="spray">網站規劃</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">其他設計</button>
-        </div>
-        <br/>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                <p>UI/UX介面設計-2020</p>
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">陳怡彣作品集</h1>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <div class="text-center mb-8">
+                <!--
+                    先註解範本 確定沒用可刪除
+                    <button class="btn btn-default filter-button" data-filter="all">全部作品</button>
+                <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+                <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes 介面設計 UI/UX
+                    Design</button>
+                <button class="btn btn-default filter-button" data-filter="irrigation">舊有專案設計</button> -->
+<!-- old style  filter-button-->
+                <button class="btn btn-outline-primary filter-button" data-filter="all">全部作品</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="web">網頁設計Ｗeb Design</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="uiux">介面設計 UI/UX Design</button>
+                <button class="btn btn-outline-primary filter-button" data-filter="design">攝影與平面設計 Design</button>
+                <button class="btn btn-outline-light filter-button" data-filter="old">舊有專案設計 old</button>
+            </div>
+<!-- main content -->
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux01">
+                    <img src="./images/uiux/figma01.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-登入頁</h4>
+                <p>figma</p>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modal_uiux01" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-登入頁</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/1.sign up.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作登入頁面。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux02">
+                    <img src="./images/uiux/figma02.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-計算機01</h4>
+                <p>figma</p>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modal_uiux02" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-計算機介面01</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/2.calculator.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作計算機介面。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux03">
+                    <img src="./images/uiux/figma03.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-計算機02</h4>
+                <p>figma</p>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modal_uiux03" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-計算機介面02</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/2.calculator2.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作 深澤直人 計算機介面。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux04">
+                    <img src="./images/uiux/figma04.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-格言介面</h4>
+                <p>figma</p>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modal_uiux04" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-格言介面</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/3.Testimonials.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作格言介面。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux05">
+                    <img src="./images/uiux/figma05.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-產品頁面</h4>
+                <p>figma</p>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="modal_uiux05" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-產品頁面</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/4.single product.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作產品頁面。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" data-toggle="modal" data-target="#modal_uiux06">
+                    <img src="./images/uiux/figma06.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-Neumorphism(新擬態設計) UI</h4>
+                <p>figma</p>
+                 <!-- Modal -->
+                 <div class="modal fade bd-example-modal-lg" id="modal_uiux06" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">介面設計-Neumorphism(新擬態設計) UI</h4>
+                                <button type="button" class="btn btn-outline-primary"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                            <!-- picture -->
+                            <div class="modal-body">
+                                <img src="./images/uiux/5.neumorphism ui.png" alt=""></div>
+                            <!-- 說明 -->
+                            <div class="modal-footer">
+                                <p>使用figma製作neumorphism ui頁面。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma07.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-日曆介面</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma08.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-待辦事項介面</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma09.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-影音播放器</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma10.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-Style Guide</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma11.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-App介面1</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma12.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-App介面2</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma13.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-App介面3</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter uiux">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/uiux/figma14.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">介面設計-優惠券介面</h4>
+                <p>figma</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://yxwchen.github.io/week6/index.html" target="_blank">
+                    <img src="./images/web/web1.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">網頁設計-電商網站<span class="font-xsm text-black-50">index、login</span></h4>
+                <p>Bootstrap4、RWD、Scss、GitHub</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter hdpe">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                <p>UI/UX介面設計-2020</p>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                <p>UI/UX介面設計-2020</p>
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter irrigation">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://yxwchen.github.io/week5/assigment.html" target="_blank">
+                    <img src="./images/web/web2.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">網頁設計-後端網站<span class="font-xsm text-black-50">admin、assigment</span></h4>
+                <p>Bootstrap4、Scss、GitHub</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://yxwchen.github.io/week3/" target="_blank">
+                    <img src="./images/web/web3.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">網頁設計-眼鏡網站<span class="font-xsm text-black-50">index、location</span></h4>
+                <p>手刻css、RWD、GitHub</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/YzWZNje" target="_blank">
+                    <img src="./images/web/web5.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">網頁設計-個人介紹頁</h4>
+                <p>手刻css、codepen</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/web/web4.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">網頁設計-個人網站</h4>
+                <p>手刻css、codepen</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design01.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">攝影作品</h4>
+                <p>sony A57</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design02.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">攝影作品</h4>
+                <p>sony A57</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design03.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">攝影作品</h4>
+                <p>sony A57</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design04.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">攝影作品</h4>
+                <p>sony A57</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design05.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">攝影作品</h4>
+                <p>sony A57</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter web">
+                <a href="https://codepen.io/yi-wen-chen/pen/RwRMKKy" target="_blank">
+                    <img src="./images/design/design06.png" class="img-fluid">
+                </a>
+                <h4 class="mt-2">logo設計</h4>
+                <p>Ａdobe illustrator</p>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter irrigation">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter spray">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter irrigation">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-6 col-12 filter irrigation">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
         </div>
     </div>
-<!--  -->
+    <!--DD </section> -->
+
     <!-- footerNav -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark px-3">
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-primary px-3">
         <a class="navbar-brand" href="index.html">Claire's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,22 +385,55 @@
                     <a class="nav-link" href="resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio_a.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-    <script src="./js/scripts.js"></script>
 </body>
+<!-- js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- filter js -->
+<script>
+    $(document).ready(function () {
+
+        $(".filter-button").click(function () {
+            var value = $(this).attr('data-filter');
+
+            if (value == "all") {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            } else {
+                //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
+
+            }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
+</script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

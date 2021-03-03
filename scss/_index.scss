@@ -16,6 +16,16 @@
     padding-top: 10rem;
     background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
+
+
+// resume 標頭資訊 小於768置中
+@media (max-width: 768px) {
+.centerInfo
+{
+  width: 300px;
+  margin: 0 auto;
+}
+}
 //projects
 .projects-section {
     padding: 10rem 0;

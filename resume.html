@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,23 +13,23 @@
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- aos動畫載入 -->
+    <!-- aos cdn -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <div class="container">
         <!--header -->
-        <div class="row py-md-3 align-items-center" data-aos="fade-down" data-aos-easing="linear"
+        <div class="row py-3 py-md-3 align-items-center" data-aos="fade-down" data-aos-easing="linear"
             data-aos-duration="1500">
-            <div class="col-12 col-md-4">
-                <img class="img-fluid rounded-circle" src="./images/resumePhoto.png" alt="">
+            <!-- photo -->
+            <div class="col-12 col-md-4 text-center">
+                <img class="img-fluid rounded-circle " src="./images/resumePhoto.png" alt="">
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
-                <ul class="list-unstyled">
-                    <li>
-                        <h2>陳怡彣-Claire Chen</h2>
-                    </li>
+            <!-- name info -->
+            <div class="col-12 col-md-4 pt-3 centerInfo">
+                <h2>陳怡彣-Claire Chen</h2>
+                <ul class="list-unstyled mx-auto mx-md-2">
                     <li>
                         <h5>網頁設計</h5>
                     </li>
@@ -41,62 +40,56 @@
                         <h5>前端設計</h5>
                     </li>
                 </ul>
-
-
-                </ul>
             </div>
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
-                <!-- <h3>聯絡方式Contact</h3> -->
-                <ul class="list-unstyled">
+            <!-- contact info -->
+            <div class="col-12 col-md-4">
+                <ul class="list-unstyled d-flex flex-column align-items-end align-items-md-start">
                     <li>claire1212@gmail.com</li>
                     <li>0937-362956</li>
-                    <li><a href="https://github.com/yxwchen" target="_blank">
-                            <i class="fab fa-github-square font-md"></i>
-                        </a>
-                        <!-- <a class="ml-2" href="https://www.facebook.com/yxwchen">
-                            <i class="fab fa-facebook-square font-md"></i></a> -->
+                    <li><span><a href="https://github.com/yxwchen" target="_blank">
+                        <i class="fab fa-github-square font-md"></i>
+                    </a></span>
+                      <span><a href="https://www.facebook.com/yxwchen" target="_blank">
+                        <i class="fab fa-facebook-square font-md"></i></a></span>
                     </li>
+
                 </ul>
             </div>
         </div>
         <!-- main -->
-        <main class="row">
+        <main class="row my-5">
             <!-- left -->
             <div class="col-12 col-md-4 my-5 px-2" data-aos="fade-right" data-aos-easing="linear"
                 data-aos-duration="1500">
                 <section>
                     <h3 class="title">個人簡述<span>Info</span></h3>
-                    <p>多媒體設計系畢業後，一直在設計領域裡
-                        持續學習精進將近十年，從基礎的設計軟
-                        體(Photoshop、Illustrator)到網站設計
-                        (HTML5+CSS3、 RWD)，與網站行銷、
-                        網站管理與優化。</p>
-                    <p>育有兩子(小一、中班)，為了重返職場有自我進修有關設計課程、使用者經驗課程 、網頁切版課程。積極尋求貴公司職務貢獻自己的能力，期待可以展開全新的職涯生活。
+                    <p class="mt-5">多媒體設計系畢業後，一直在設計領域裡持續學習精進將近十年，從基礎的設計軟體(Photoshop、Illustrator)到網站設計
+                        (HTML5+CSS3、RWD)，與網站行銷、網站管理與優化。</p>
+                    <p>育有兩子(小一、中班)，為了重返職場進修相關設計課程、使用者經驗課程 、網頁切版課程。積極尋求貴公司職務貢獻自己的能力，期待可以展開全新的職涯生活。
                     </p>
                     <p>
-                        除了基本網頁技能外，也喜歡 UI/UX 領域的事物 ，應用在網頁、產品上，讓介面獲得良好的使用體驗。</p>
-                    <P>
-                        <h5 class="subtitle">未來展望<span>Future</span>
-                        </h5>
-                        <ul>
-                            <li>專案前期的溝通：User Story、Functional map、Flow Chart、UI Flow
-                            </li>
-                            <li>專案雛形：WireFrame、Mock up、Prototype
-                            </li>
-                            <li>專案製作：HTML5、CSS3、Bootstrap、jQuery
-                            </li>
-                        </ul>
-
-                    </P>
+                        除了基本網頁技能外，也喜歡 UI/UX 領域的事物，應用在網頁、產品上，讓介面獲得良好的使用體驗。</p>
+                    <h5 class="subtitle mt-3">未來展望<span>Future</span>
+                    </h5>
+                    <ul>
+                        <li>專案前期的溝通：User Story、Functional map、Flow Chart、UI Flow
+                        </li>
+                        <li>專案雛形：WireFrame、Mock up、Prototype
+                        </li>
+                        <li>專案設計：Photoshop、Illustrator、Adobe XD、Figma</li>
+                        <li>專案製作：HTML5、CSS3、Bootstrap、jQuery
+                        </li>
+                        <li>專案協同：Git版本控管</li>
+                    </ul>
                 </section>
-                <section>
+                <section class="mt-5">
                     <h3 class="title">學歷<span>Education</span></h3>
-                    <p>2004-2008<br>
+                    <p class="mt-3">2004-2008<br>
                         國立台中科技大學 多媒體設計系畢業</p>
                 </section>
-                <section>
+                <section class="mt-5">
                     <h3 class="title">技能<span>Skills</span></h3>
-                    <h5 class="subtitle">網頁設計<span>Web</span></h5>
+                    <h5 class="subtitle mt-3">網頁設計<span>Web</span></h5>
                     <ul>
                         <li>HTML5+CSS3
                         </li>
@@ -104,10 +97,9 @@
                         <li>Visual Studio Team Services
                         </li>
                         <li>Bootstrap</li>
-                        <li>Wordpress</li>
                         <li>Git</li>
                     </ul>
-                    <h5 class="subtitle">設計軟體<span>Design</span>
+                    <h5 class="subtitle mt-3">設計軟體<span>Design</span>
                     </h5>
                     <ul>
                         <li>Figma</li>
@@ -118,10 +110,7 @@
                 </section>
             </div>
             <!-- right -->
-            <div class="col-12 col-md-8" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
-                <div class="container my-5">
-                    <div class="row">
-                        <div class="col-md-12">
+            <div class="col-12 col-md-8 my-5" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
                             <h3 class="title">經歷<span>Work Experience</span></h3>
                             <ul class="timeline">
                                 <li>
@@ -191,14 +180,11 @@
                                     </ol>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </main>
     </div>
     <!-- footerNav -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark px-3">
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-primary px-3">
         <a class="navbar-brand" href="index.html">Claire's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -216,17 +202,8 @@
                     <a class="nav-link" href="resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio_a.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <!-- <hr class="d-sm-block d-md-block d-lg-none d-xl-none text-white"> -->
-                <!-- <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">claire1212@gmail.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">0937-362956</a>
-                </li>
-            </ul> -->
             </ul>
         </div>
     </nav>
