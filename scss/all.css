@@ -16241,6 +16241,10 @@ ul.timeline > li:before {
   }
 }
 
+.ulspace li {
+  margin-bottom: 1rem;
+}
+
 .gallery-title {
   font-size: 2rem;
   color: #78ABD1;
