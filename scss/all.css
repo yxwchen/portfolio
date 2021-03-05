@@ -16046,6 +16046,14 @@ img {
   font-size: 12px;
 }
 
+.border-radius-half {
+  border-radius: 5rem;
+}
+
+.border-width-md {
+  border-width: 2px;
+}
+
 ul.timeline {
   list-style-type: none;
   position: relative;
