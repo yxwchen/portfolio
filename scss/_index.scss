@@ -29,7 +29,7 @@
 }
 //projects
 .projects-section {
-    padding: 10rem 0;
+    padding: 5rem 0;
   }
   .projects-section .featured-text {
     padding: 2rem;
@@ -54,6 +54,15 @@
       width: 30%;
     }
   }
+//首頁間距縮小改寫
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 0;
+}
+.about-section{
+  padding-top: 6rem;
+}
+}
 
   // work間距
   .ulspace li{

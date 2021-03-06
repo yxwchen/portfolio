@@ -16120,6 +16120,7 @@ ul.timeline > li:before {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  border-bottom: 1px #efefef solid;
 }
 
 #mainNav .navbar-toggler {
@@ -16227,7 +16228,7 @@ ul.timeline > li:before {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -16254,6 +16255,15 @@ ul.timeline > li:before {
     border-color: #95BEDF;
     border-width: 0.25rem;
     width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 0;
+  }
+  .about-section {
+    padding-top: 6rem;
   }
 }
 
