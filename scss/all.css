@@ -16054,6 +16054,10 @@ img {
   border-width: 2px;
 }
 
+.fab {
+  margin-right: 1rem;
+}
+
 ul.timeline {
   list-style-type: none;
   position: relative;
